@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <h1>Qualche grafico</h1>
+    <h4>Agosto 2022 - Tiziana Mancinelli</h4>
+    <hr/>
+
+    <div class="container">
+      <div class="row">
+        <h4>Visite raggruppate per versioni</h4>
+        <ul class="nav nav-tabs" id="regioni" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="regione-tab1" data-bs-toggle="tab" data-bs-target="#regione-tab1-pane" type="button" role="tab" aria-controls="regione-tab1-pane" aria-selected="true">Chart totale</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="regione-tab2" data-bs-toggle="tab" data-bs-target="#regione-tab2-pane" type="button" role="tab" aria-controls="regione-tab2-pane" aria-selected="false">Pie totale</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="regione-tab3" data-bs-toggle="tab" data-bs-target="#regione-tab3-pane" type="button" role="tab" aria-controls="regione-tab3-pane" aria-selected="true">Chart uniche</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="regione-tab4" data-bs-toggle="tab" data-bs-target="#regione-tab4-pane" type="button" role="tab" aria-controls="regione-tab4-pane" aria-selected="false">Pie uniche</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="regioniContent">
+          <div class="tab-pane fade show active" id="regione-tab1-pane" role="tabpanel" aria-labelledby="regione-tab1" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_1_versioni"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="regione-tab2-pane" role="tabpanel" aria-labelledby="regione-tab2" tabindex="0">
+           <div class="chart">
+             <canvas id="chart_2_versioni"></canvas>
+           </div>
+          </div>
+          <div class="tab-pane fade show" id="regione-tab3-pane" role="tabpanel" aria-labelledby="regione-tab3" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_3_versioni"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="regione-tab4-pane" role="tabpanel" aria-labelledby="regione-tab4" tabindex="0">
+           <div class="chart">
+             <canvas id="chart_4_versioni"></canvas>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h4>Visite raggruppate per documento</h4>
+        <ul class="nav nav-tabs" id="settori" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="settore-tab1" data-bs-toggle="tab" data-bs-target="#settore-tab1-pane" type="button" role="tab" aria-controls="settore-tab1-pane" aria-selected="true">Chart</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="settore-tab2" data-bs-toggle="tab" data-bs-target="#settore-tab2-pane" type="button" role="tab" aria-controls="settore-tab2-pane" aria-selected="false">Pie</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="settore-tab3" data-bs-toggle="tab" data-bs-target="#settore-tab3-pane" type="button" role="tab" aria-controls="settore-tab3-pane" aria-selected="true">Chart uniche</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="settore-tab4" data-bs-toggle="tab" data-bs-target="#settore-tab4-pane" type="button" role="tab" aria-controls="settore-tab4-pane" aria-selected="false">Pie unique</button>
+           </li>
+           <li class="nav-item" role="presentation">
+              <button class="nav-link" id="settore-tab5" data-bs-toggle="tab" data-bs-target="#settore-tab5-pane" type="button" role="tab" aria-controls="settore-tab5-pane" aria-selected="true">Chart Consultazione</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="settore-tab6" data-bs-toggle="tab" data-bs-target="#settore-tab6-pane" type="button" role="tab" aria-controls="settore-tab6-pane" aria-selected="false">Pie Consultazione</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="settoriContent">
+          <div class="tab-pane fade show active" id="settore-tab1-pane" role="tabpanel" aria-labelledby="settore-tab1" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_1_documento"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="settore-tab2-pane" role="tabpanel" aria-labelledby="settore-tab2" tabindex="0">
+           <div class="chart">
+             <canvas id="chart_2_documento"></canvas>
+           </div>
+          </div>
+          <div class="tab-pane fade show" id="settore-tab3-pane" role="tabpanel" aria-labelledby="settore-tab3" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_3_documento"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="settore-tab4-pane" role="tabpanel" aria-labelledby="settore-tab4" tabindex="0">
+           <div class="chart">
+             <canvas id="chart_4_documento"></canvas>
+           </div>
+          </div>
+          <div class="tab-pane fade show" id="settore-tab5-pane" role="tabpanel" aria-labelledby="settore-tab5" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_5_documento"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="settore-tab6-pane" role="tabpanel" aria-labelledby="settore-tab6" tabindex="0">
+           <div class="chart">
+             <canvas id="chart_6_documento"></canvas>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h4>Visite raggruppate per pagine di documenti</h4>
+        <ul class="nav nav-tabs" id="regioni" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pagine-pnd" data-bs-toggle="tab" data-bs-target="#pagine-pnd-pane" type="button" role="tab" aria-controls="pagine-pnd-pane" aria-selected="true">PND</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pagine-digitalizzazione" data-bs-toggle="tab" data-bs-target="#pagine-digitalizzazione-pane" type="button" role="tab" aria-controls="pagine-digitalizzazione-pane" aria-selected="true">Digitalizzazione</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pagine-circolazione" data-bs-toggle="tab" data-bs-target="#pagine-circolazione-pane" type="button" role="tab" aria-controls="pagine-circolazione-pane" aria-selected="true">Circolazione</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pagine-dmp" data-bs-toggle="tab" data-bs-target="#pagine-dmp-pane" type="button" role="tab" aria-controls="pagine-dmp-pane" aria-selected="true">DMP</button>
+          </li><li class="nav-item" role="presentation">
+            <button class="nav-link" id="pagine-servizi" data-bs-toggle="tab" data-bs-target="#pagine-servizi-pane" type="button" role="tab" aria-controls="pagine-servizi-pane" aria-selected="true">Servizi</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pagine-maturita" data-bs-toggle="tab" data-bs-target="#pagine-maturita-pane" type="button" role="tab" aria-controls="pagine-maturita-pane" aria-selected="true">Maturità</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pagineContent">
+          <div class="tab-pane fade show active" id="pagine-pnd-pane" role="tabpanel" aria-labelledby="pagine-pnd" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_pnd"></canvas>
+            </div>
+            <div class="chart">
+              <canvas id="pie_pnd"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pagine-digitalizzazione-pane" role="tabpanel" aria-labelledby="pagine-digitalizzazione" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_digitalizzazione"></canvas>
+            </div>
+            <div class="chart">
+              <canvas id="pie_digitalizzazione"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade show active" id="pagine-circolazione-pane" role="tabpanel" aria-labelledby="pagine-circolazione" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_circolazione"></canvas>
+            </div>
+            <div class="chart">
+              <canvas id="pie_circolazione"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pagine-dmp-pane" role="tabpanel" aria-labelledby="pagine-dmp" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_dmp"></canvas>
+            </div>
+            <div class="chart">
+              <canvas id="pie_dmp"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pagine-servizi-pane" role="tabpanel" aria-labelledby="pagine-servizi" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_servizi"></canvas>
+            </div>
+            <div class="chart">
+              <canvas id="pie_servizi"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pagine-maturita-pane" role="tabpanel" aria-labelledby="pagine-maturita" tabindex="0">
+            <div class="chart">
+              <canvas id="chart_maturita"></canvas>
+            </div>
+            <div class="chart">
+              <canvas id="pie_maturita"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  	<script src="csv-json.js"></script>
+  </body>
+</html>
